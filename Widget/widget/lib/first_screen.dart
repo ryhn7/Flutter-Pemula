@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget/components/screem_column.dart';
 import 'package:widget/components/screen_container.dart';
 import 'package:widget/components/screen_row.dart';
 
@@ -29,7 +30,7 @@ class FirstScreen extends StatelessWidget {
               color: Colors.white,
             )),
       ),
-      body: const ScreenRow(),
+      body: const ScreenColumn(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.blueGrey,
