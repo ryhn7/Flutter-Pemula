@@ -27,18 +27,24 @@ class FirstScreen extends StatelessWidget {
               color: Colors.white,
             )),
       ),
-      body: const Center(
-          child: Text(
-        'Rayhan Jago Flutter',
-        style: TextStyle(fontSize: 24),
-      )),
+      body: Container(
+          decoration: BoxDecoration(
+            color: const Color.fromARGB(255, 14, 147, 208),
+            borderRadius: BorderRadius.circular(10),
+          ),
+          margin: const EdgeInsets.all(10),
+          padding: const EdgeInsets.all(10),
+          child: const Text(
+            'Rayhan Jago Flutter',
+            style: TextStyle(fontSize: 24, color: Colors.white),
+          )),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.blueGrey,
         child: const Icon(
           Icons.add,
           color: Colors.white,
-          ),
+        ),
       ),
     );
   }
