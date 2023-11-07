@@ -1,7 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:widget/components/expanded_flexible_screen.dart';
+import 'package:widget/second_screen.dart';
 
 class FirstScreen extends StatelessWidget {
+  final String message = "Hello there!";
+
   const FirstScreen({super.key});
 
   @override
@@ -28,15 +30,24 @@ class FirstScreen extends StatelessWidget {
               color: Colors.white,
             )),
       ),
-      body: const RainbowScreen(),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {},
-        backgroundColor: Colors.blueGrey,
-        child: const Icon(
-          Icons.add,
-          color: Colors.white,
-        ),
+      body: Center(
+        child: ElevatedButton(
+            onPressed: () {
+              Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                      builder: (context) => SecondScreen(message)));
+            },
+            child: const Text('Go to Second Screen')),
       ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {},
+      //   backgroundColor: Colors.blueGrey,
+      //   child: const Icon(
+      //     Icons.add,
+      //     color: Colors.white,
+      //   ),
+      // ),
     );
   }
 }
