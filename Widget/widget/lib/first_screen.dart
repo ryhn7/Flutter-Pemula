@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:widget/components/font_screen.dart';
 import 'package:widget/components/image_screen.dart';
 import 'package:widget/components/input_screen.dart';
 
@@ -29,7 +30,7 @@ class FirstScreen extends StatelessWidget {
               color: Colors.white,
             )),
       ),
-      body: const ImageScreen(),
+      body: const FontScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.blueGrey,
