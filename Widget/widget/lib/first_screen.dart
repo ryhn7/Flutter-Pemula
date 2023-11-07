@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:widget/components/listview_screen.dart';
+import 'package:widget/components/expanded_flexible_screen.dart';
 
 class FirstScreen extends StatelessWidget {
   const FirstScreen({super.key});
@@ -28,7 +28,7 @@ class FirstScreen extends StatelessWidget {
               color: Colors.white,
             )),
       ),
-      body: const ListViewScreen(),
+      body: const RainbowScreen(),
       floatingActionButton: FloatingActionButton(
         onPressed: () {},
         backgroundColor: Colors.blueGrey,
